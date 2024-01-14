@@ -51,7 +51,19 @@
         // MANDATORY script for bitcoinjs to let it know the length of the script
         function witnessStackToScriptWitness(witness) {
             let buffer2 = buffer.Buffer.allocUnsafe(0);
-            
+            function writeSlice(slice) {buffer2 = buffer.Buffer.concat([buffer2, buffer.Buffer.from(
+                slice)]);}
+            function writeVarInt(i) {
+                const currentLen = buffer2.length;
+                const varintLen = varuintBitcoin.encodingLength(i);
+                buffer2 = buffer.Buffer.concat([buffer2, buffer.Buffer.allocUnsafe(varintLen)]);
+                varuintBitcoin.encode(i, buffer2, currentLen);
+            }
+            function writeVarSlice(slice) {writeVarInt(slice.length);writeSlice(slice); }
+            function writeVector(vector) {writeVarInt(vector.length);vector.forEach(writeVarSlice); }
+            writeVector(witness);
+            return buffer2;
+
         }
     </script>
  
