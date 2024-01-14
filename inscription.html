@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://bitcoincore.tech/apps/bitcoinjs-ui/lib/bitcoinjs-lib.js"> </script>
+    <script src="https://bundle.run/buffer@6.0.3"> </script>
+    <script src="https://bundle.run/varuint-bitcoin@1.1.2"> </script>
+</head>
+<body>
+    <script>
+        var alice = bitcoinjs.ECPair.makeRandom()
+        var alice_priv = alice.privateKey.toString( "hex" )
+        var alice_pub = alice.publicKey.toString( "hex" )
+        console.log( "alice", alice_pub )
+        var bob = bitcoinjs.ECPair.makeRandom()
+        var bob_priv = bob.privateKey.toString( "hex" )
+        var bob_pub = bob.publicKey.toString( "hex" )
+        console.log( "bob", bob_pub )
+        // hash for potential winners in game
+        var packers_hash = "8cb74f633826472ec0709268506e5b9af9729ef1"
+        var saints_hash = "6fb18f274fec83bb2511460ab3dd90099c8a6b95"
+
+    </script>
+</body>
+</html>
