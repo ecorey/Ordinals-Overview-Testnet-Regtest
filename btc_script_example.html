@@ -30,8 +30,22 @@
                 ${alice_pub} OP_CHECKSIG
                 OP_ELSE OP_HASH160 ${saints_hash} OP_EQUALVERIFY
                 ${bob_pub} OP_CHECKSIG
-                OP_ENDIF`.trim().replace(/\s+/g, ''));
+                OP_ENDIF`.trim().replace(/\s+/g, ' '));
         }
     </script>
+    
+    <script>
+        // script to call function
+        function ballgame(alice_pub, bob_pub, packers_hash, saints_hash) {
+            var p2wsh = bitcoinjs.payments.p2wsh({redeem: {output:
+            ballgameScript( alice_pub, bob_pub, packers_hash, saints_hash
+            ), network: bitcoinjs.networks.regtest}, network: 
+            bitcoinjs.regtest });
+            console.log('P2WSH smart contract address: ', p2wsh.address);
+            return p2wsh.address;
+        }
+        ballgame( alice_pub, bob_pub, packers_hash, saints_hash );
+    </script>
+ 
 </body>
 </html>
