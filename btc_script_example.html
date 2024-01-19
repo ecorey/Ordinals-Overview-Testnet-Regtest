@@ -66,6 +66,17 @@
 
         }
     </script>
+
+    <script>
+        async function withdrawFromBallgameAddress( secret, privKey, alice_pub, bob_pub, packers_hash, saints_hash) {
+            var txid = '4f768c0a5026eb85cfda8b95e06149484befff29f427adeee324c83ce612d412';
+            var txindex = 1;
+            var useraddress = "bcrt1qtnycdaxxmp4mah30p8usx69y7w63a9jx9xdrtn";
+            var original_quantity_of_sats = 25000000;
+            var new_quantity_of_sats = original_quantity_of_sats - 500;
+            var witnessscript = ballgameScript( alice_pub, bob_pub, packers_hahs, saints_hash);
+        };
+    </script>
  
 </body>
 </html>
