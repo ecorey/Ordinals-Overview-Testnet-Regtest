@@ -3,7 +3,7 @@ In Bitcoin Core folder run for regtest:
 .\bitcoin-qt.exe -regtest -daemon -txindex -listen=0
 
 or for bitcoind
-.\bitcoind -regtest -txindex -daemon -listen=0
+.\bitcoind -regtest -txindex -listen=0
 
  .\bitcoin-cli -regtest getnetworkinfo
 
