@@ -42,7 +42,11 @@
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" createwallet "taproot_wallet1" false false "" false true
 
+8) get wallet recieve address
 
+    .\bitcoin-cli --testnet --datadir="D:\BitcoinData" -rpcwallet="taproot_wallet1" getnewaddress "" "bech32m"
+
+    e.g. tb1qt0n9j9re9cvw05ztjv60ka65ywxuj2h3r22t96
 
 
     STOP TESTNET
