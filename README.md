@@ -1,5 +1,6 @@
 
 ----- START TESTNET ------
+
 1) .\bitcoind in -testnet using the d drive
 
     .\bitcoind -testnet -datadir="D:\BitcoinData" -txindex
@@ -33,14 +34,21 @@
     ./bitcoin-qt -testnet
 
 
+
+
 6) list wallets
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" listwallets
 
 
+
+
 7) create taproot wallet
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" createwallet "taproot_wallet1" false false "" false true
+
+
+
 
 8) get wallet recieve address
 
@@ -49,7 +57,16 @@
     e.g. tb1qt0n9j9re9cvw05ztjv60ka65ywxuj2h3r22t96
 
 
-    STOP TESTNET
+
+
+9) list descriptors
+
+    .\bitcoin-cli --testnet --datadir="D:\BitcoinData" listdescriptors
+
+
+
+
+ END) STOP TESTNET
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" stop
 
