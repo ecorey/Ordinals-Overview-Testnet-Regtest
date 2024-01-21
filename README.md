@@ -18,3 +18,14 @@ generatetoaddress 101 'bcrt1qyk8dqzfnxhma8xjecme2lk27f8zrcqh0j57gn7'
 
 // 34:oo
 // https://www.youtube.com/watch?v=C9wf14vlLOc&t=2296s
+
+
+
+
+----- START TESTNET ---
+1) .\bitcoind in -testnet using the d drive
+.\bitcoind -testnet -datadir="D:\BitcoinData"
+
+2) check with .\bitcoin-cli that testnet is synced
+.\bitcoin-cli -testnet -datadir="D:\BitcoinData" getblockchaininfo
+
