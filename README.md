@@ -33,6 +33,16 @@
     ./bitcoin-qt -testnet
 
 
+6) list wallets
+
+    .\bitcoin-cli --testnet --datadir="D:\BitcoinData" listwallets
+
+
+7) create taproot wallet
+
+    .\bitcoin-cli --testnet --datadir="D:\BitcoinData" createwallet "taproot_wallet1" false false "" false true
+
+
 
 
     STOP TESTNET
