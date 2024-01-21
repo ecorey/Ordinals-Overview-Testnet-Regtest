@@ -66,7 +66,7 @@
 
 
 
- END) STOP TESTNET
+99) STOP TESTNET
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" stop
 
