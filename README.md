@@ -1,29 +1,3 @@
-In Bitcoin Core folder run for regtest:
-// creates a test wallet
-
-or for bitcoind
-.\bitcoind -regtest -txindex -listen=0
-
- .\bitcoin-cli -regtest getnetworkinfo
-
- ord -r server
-
- ord --regtest wallet create
-
-run html in browser
-
-in console eg address to mine coins for use on testnet:
-
-generatetoaddress 101 'bcrt1qyk8dqzfnxhma8xjecme2lk27f8zrcqh0j57gn7'
-
-// 34:oo
-// https://www.youtube.com/watch?v=C9wf14vlLOc&t=2296s
-
-
----
-
----
-
 
 
 
@@ -39,4 +13,39 @@ generatetoaddress 101 'bcrt1qyk8dqzfnxhma8xjecme2lk27f8zrcqh0j57gn7'
 3) start the ord server with the testnet
 
     ord --testnet --data-dir="D:\BitcoinData" --cookie-file="D:\BitcoinData\testnet3\.cookie" server
+
+4) check block count
+
+    .\bitcoin-cli --testnet --datadir="D:\BitcoinData" getblockcount
+
+
+
+STOP TESTNET
+
+    .\bitcoin-cli --testnet --datadir="D:\BitcoinData" stop
+
+
+---
+
+---
+
+---REGTEST---
+
+    .\bitcoind -regtest -datadir="D:\BitcoinRegtest" -txindex -listen=0
+
+
+    ord --regtest --data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\testnet3\.cookie" server
+
+
+    ord --regtest --data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\testnet3\.cookie" wallet create
+
+
+    .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest" generatetoaddress 101 'xxxxx'
+
+
+    .\bitcoin-cli --regtest --datadir="D:\BitcoinRegtest" stop
+    
+---
+
+---
 
