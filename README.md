@@ -90,12 +90,12 @@
 
 1) get balance
 
-    ord --testnet --bitcoin-data-dir="D:\BitcoinData" --cookie-file="D:\BitcoinData\testnet3\.cookie" wallet receive
+   
 
 
 1) get bitcoin
 
-
+    -[faucets](https://bitcoinfaucet.uo1.net/)-
 
 
 99) STOP TESTNET
