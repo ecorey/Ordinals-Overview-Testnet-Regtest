@@ -24,7 +24,7 @@
 
 
 
-4) OR open testnet gui  // need to close bitcoind first as it has a lock // cannot open ord
+4) OR open testnet gui  // need to close bitcoind first as it has a lock // cannot open ord like this
 
     
     ./bitcoin-qt -testnet -datadir="D:\BitcoinData" -wallet=ord
