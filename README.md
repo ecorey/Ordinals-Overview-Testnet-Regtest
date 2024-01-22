@@ -21,6 +21,7 @@
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" getblockcount
 
 
+can check block against the [ordinals.com testnet](https://testnet.ordinals.com/blocks) 
 
 
 
@@ -132,7 +133,7 @@
 
 
 
-
+ord --testnet --cookie-file="D:\BitcoinData\testnet3\.cookie" wallet inscribe --fee-rate 100000 --file radbro.txt
 
 
 
