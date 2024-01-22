@@ -15,42 +15,40 @@
 
 
 
-3) start the ord server with the testnet
 
-    ord --testnet --bitcoin-data-dir="D:\BitcoinData" --cookie-file="D:\BitcoinData\testnet3\.cookie" server
-
-
-
-
-4) check block count
+3) check block count
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" getblockcount
 
 
 
 
-5) open testnet gui
+
+4) open testnet gui
 
     ./bitcoin-qt -testnet
 
 
 
 
-6) list wallets
+
+5) list wallets
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" listwallets
 
 
 
 
-7) create taproot wallet
+
+6) create taproot wallet
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" createwallet "taproot_wallet1" false false "" false true
 
 
 
 
-8) get wallet recieve address
+
+7) get wallet recieve address
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" -rpcwallet="taproot_wallet1" getnewaddress "" "bech32m"
 
@@ -59,9 +57,20 @@
 
 
 
-9) list descriptors
+
+8) list descriptors
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" listdescriptors
+
+
+
+
+
+9) start the ord server with the testnet
+
+    ord --testnet --bitcoin-data-dir="D:\BitcoinData" --cookie-file="D:\BitcoinData\testnet3\.cookie" server
+
+
 
 
 
@@ -69,8 +78,6 @@
 99) STOP TESTNET
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" stop
-
-
 
 
 
