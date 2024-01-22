@@ -24,9 +24,11 @@
 
 
 
-4) open testnet gui
+4) OR open testnet gui  // need to close bitcoind first as it has a lock // cannot open ord
 
-    ./bitcoin-qt -testnet
+    
+    ./bitcoin-qt -testnet -datadir="D:\BitcoinData" -wallet=ord
+
 
 
 
@@ -71,6 +73,27 @@
     ord --testnet --bitcoin-data-dir="D:\BitcoinData" --cookie-file="D:\BitcoinData\testnet3\.cookie" server --http-port 8080 --address 127.0.0.1
 
 
+
+
+
+10) create ord wallet
+
+    ord --testnet --bitcoin-data-dir="D:\BitcoinData" --cookie-file="D:\BitcoinData\testnet3\.cookie" wallet create
+
+
+
+10) create ord wallet recieve 
+
+
+    ord --testnet --bitcoin-data-dir="D:\BitcoinData" --cookie-file="D:\BitcoinData\testnet3\.cookie" wallet receive
+
+
+1) get balance
+
+    ord --testnet --bitcoin-data-dir="D:\BitcoinData" --cookie-file="D:\BitcoinData\testnet3\.cookie" wallet receive
+
+
+1) get bitcoin
 
 
 
