@@ -93,9 +93,13 @@
    
 
 
-1) get bitcoin
+1) get testnet bitcoin
 
-    -[faucets](https://bitcoinfaucet.uo1.net/)-
+    [faucets](https://bitcoinfaucet.uo1.net/)-
+
+
+    [or here and use legacy segwit address in unisat wallet](https://coinfaucet.eu/en/btc-testnet/)
+
 
 
 99) STOP TESTNET
