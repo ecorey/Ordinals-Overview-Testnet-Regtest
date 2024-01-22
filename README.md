@@ -88,9 +88,32 @@
     ord --testnet --bitcoin-data-dir="D:\BitcoinData" --cookie-file="D:\BitcoinData\testnet3\.cookie" wallet receive
 
 
+
+
+
+1) load wallet named "ord"
+
+    .\bitcoin-cli -testnet -datadir="D:\BitcoinData" loadwallet "ord"
+
+
+
+
+
+1) get addresses 
+
+    .\bitcoin-cli -testnet -datadir="D:\BitcoinData" listaddressgroupings
+
+
+
+
+
 1) get balance
 
    
+    .\bitcoin-cli -testnet -datadir="D:\BitcoinData" getreceivedbyaddress "tb1pk0vfpp7jf6cv0j926gqr2d39uy292y9l5yc904p7vcq5jthktjrscz24vf"
+
+
+
 
 
 1) get testnet bitcoin
