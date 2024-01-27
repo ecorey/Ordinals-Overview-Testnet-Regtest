@@ -1,8 +1,8 @@
 const axios = require('axios');
 
-const rpcUser = 'root';
-const rpcPassword = 'Lkl12345!';
-const rpcURL = 'http://127.0.0.1:8080'; 
+const rpcUser = '__cookie__';
+const rpcPassword = 'e8540eceb06f7e16c46c12b4ec76d794ec7bfc551ae67b90df263bbfa25434ef';
+const rpcURL = 'http://127.0.0.1:18443'; 
 async function getBlockchainInfo() {
     try {
         const payload = {
