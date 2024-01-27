@@ -1,7 +1,7 @@
 
 ----- START TESTNET ------
 
-1) .\bitcoind in -testnet using the d drive
+1) .\bitcoind in -testnet using the d drive to store the blockchain
 
     .\bitcoind -testnet -datadir="D:\BitcoinData" -txindex
 
@@ -11,7 +11,6 @@
 2) check with .\bitcoin-cli that testnet is synced compare block number to [bitcoin testnet](https://mempool.space/testnet) 
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" getblockchaininfo
-
 
 
 
@@ -27,16 +26,6 @@
 
 
 
-4) to open testnet gui  // need to close bitcoind first as it has a lock // cannot open ord like this
-
-    
-    ./bitcoin-qt -testnet -datadir="D:\BitcoinData" -wallet=ord
-
-
-
-
-
-
 5) list wallets
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" listwallets
@@ -44,11 +33,9 @@
 
 
 
-
 6) create taproot wallet
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" createwallet "ord" false false "" false true
-
 
 
 
@@ -62,11 +49,9 @@
 
 
 
-
 8) list descriptors
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" listdescriptors
-
 
 
 
@@ -78,11 +63,9 @@
 
 
 
-
 10) create ord wallet
 
     ord --testnet --bitcoin-data-dir="D:\BitcoinData" --cookie-file="D:\BitcoinData\testnet3\.cookie" wallet create
-
 
 
 
@@ -95,12 +78,9 @@
 
 
 
-
-
 12) load wallet named "ord"
 
     .\bitcoin-cli -testnet -datadir="D:\BitcoinData" loadwallet "ord"
-
 
 
 
@@ -112,12 +92,9 @@
 
 
 
-
 14) get addresses 
 
     .\bitcoin-cli -testnet -datadir="D:\BitcoinData" listaddressgroupings
-
-
 
 
 
@@ -130,7 +107,6 @@
 
 
 
-
 16) get balance ord
 
     ord --testnet --bitcoin-data-dir="D:\BitcoinData" --cookie-file="D:\BitcoinData\testnet3\.cookie" wallet balance
@@ -138,15 +114,14 @@
 
 
 
-
-17) inscribe a text saved in a .txt file and in an envelope
+17) inscribe a text saved in a .txt 
 
     ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\inscribed.txt"
 
 
 
 
-98) get testnet bitcoin
+97) get testnet bitcoin
 
 
     use this [swap](https://www.altquick.com/swap/)
@@ -154,11 +129,21 @@
 
     
 
+98) to open testnet gui  // need to close bitcoind first as it has a lock and will lock
+
+    
+    ./bitcoin-qt -testnet -datadir="D:\BitcoinData" -wallet=ord
+
+
 
 
 99) STOP TESTNET
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" stop
+
+
+
+
 
 
 
@@ -201,6 +186,7 @@
 
 
 
+
 1) generate to address (needs to be more than 101 for first rewards)
 
     .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest" generatetoaddress 101 'bcrt1pj5c2dlkspvkcj2nq7amv0r2sqxw4vtjtrxhlf3c6mqkyaa7452vsa9xjn2'
@@ -225,6 +211,7 @@
 
 
 
+
 1) index ord
 
     ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" index update
@@ -239,7 +226,7 @@
 
 
 
-1) inscribe a text saved in a .txt file and in an envelope
+1) inscribe a text saved in a .txt 
 
     ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\inscribed.txt"
 
@@ -249,7 +236,6 @@
 1) inscribe a jpg file
 
     ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\radbro.jpg"
-
 
 
 
