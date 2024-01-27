@@ -201,7 +201,7 @@ inscribed.txt:
     OP_PUSH 1
     OP_PUSH "text/plain;charset=utf-8"
     OP_PUSH 0
-    OP_PUSH "crypto anunnaki strikes again"
+    OP_PUSH "some text to inscribe"
     OP_ENDIF
 
 
