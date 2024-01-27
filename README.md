@@ -87,7 +87,7 @@ can check block against the [ordinals.com testnet](https://testnet.ordinals.com/
 
 
 
-10) create ord wallet recieve 
+11) create ord wallet recieve 
 
 
     ord --testnet --bitcoin-data-dir="D:\BitcoinData" --cookie-file="D:\BitcoinData\testnet3\.cookie" wallet receive
@@ -96,14 +96,16 @@ can check block against the [ordinals.com testnet](https://testnet.ordinals.com/
 
 
 
-1) load wallet named "ord"
+
+12) load wallet named "ord"
 
     .\bitcoin-cli -testnet -datadir="D:\BitcoinData" loadwallet "ord"
 
 
 
 
-1) unload wallet named "ord"
+
+13) unload wallet named "ord"
 
     .\bitcoin-cli -testnet -datadir="D:\BitcoinData" unloadwallet "ord"
 
@@ -111,7 +113,7 @@ can check block against the [ordinals.com testnet](https://testnet.ordinals.com/
 
 
 
-1) get addresses 
+14) get addresses 
 
     .\bitcoin-cli -testnet -datadir="D:\BitcoinData" listaddressgroupings
 
@@ -119,7 +121,8 @@ can check block against the [ordinals.com testnet](https://testnet.ordinals.com/
 
 
 
-1) get balance
+
+15) get balance
 
    
     .\bitcoin-cli -testnet -datadir="D:\BitcoinData" getreceivedbyaddress "tb1pk0vfpp7jf6cv0j926gqr2d39uy292y9l5yc904p7vcq5jthktjrscz24vf"
@@ -127,13 +130,23 @@ can check block against the [ordinals.com testnet](https://testnet.ordinals.com/
 
 
 
-1) get balance ord
+
+16) get balance ord
 
     ord --testnet --bitcoin-data-dir="D:\BitcoinData" --cookie-file="D:\BitcoinData\testnet3\.cookie" wallet balance
 
 
 
-1) get testnet bitcoin
+
+
+17) inscribe a text saved in a .txt file and in an envelope
+
+    ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" wallet inscribe --fee-rate 1000 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\inscribed.txt"
+
+
+
+
+98) get testnet bitcoin
 
    USE THIS [SWAP](https://www.altquick.com/swap/)
 
