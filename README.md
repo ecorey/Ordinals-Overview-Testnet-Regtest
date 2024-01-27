@@ -1,3 +1,10 @@
+JUst, AnOther project created out of painstakingly long attempts at =getting easy things wrong and sometimes tricky things right. In this repo are cli commands to interact with the bitcoind and ord libraries to create inscriptions on both the testnet and regnet. 
+
+The scripts included are to demonstrate interacting with the bitcoin-cli interface via js. 
+
+---
+
+---
 
 ----- START TESTNET ------
 
@@ -118,6 +125,10 @@
 
     ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\inscribed.txt"
 
+
+    inscribe an image
+
+    ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\radbro.jpg"
 
 
 
