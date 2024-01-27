@@ -172,84 +172,84 @@
 
 ---REGTEST---
 
-   1) start regtest
+1) start regtest
    
-        .\bitcoind -regtest -datadir="D:\BitcoinRegtest" -txindex -listen=0
+    .\bitcoind -regtest -datadir="D:\BitcoinRegtest" -txindex -listen=0
 
 
 
 
-    1) get info 
+1) get info 
 
-        .\bitcoin-cli --regtest -datadir="D:\BitcoinRegtest" getblockchaininfo
-
-
-
-
-   1) create ord wallet on regtest
-
-        ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet create
+     .\bitcoin-cli --regtest -datadir="D:\BitcoinRegtest" getblockchaininfo
 
 
 
 
-    1) recieve ord wallet on regtest
+1) create ord wallet on regtest
 
-        ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet receive
+    ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet create
+
+
+
+
+1) recieve ord wallet on regtest
+
+    ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet receive
     
-        e.g. "bcrt1pj5c2dlkspvkcj2nq7amv0r2sqxw4vtjtrxhlf3c6mqkyaa7452vsa9xjn2"
+    e.g. "bcrt1pj5c2dlkspvkcj2nq7amv0r2sqxw4vtjtrxhlf3c6mqkyaa7452vsa9xjn2"
 
 
 
-    1) generate to address (needs to be more than 101 for first rewards)
+1) generate to address (needs to be more than 101 for first rewards)
 
-        .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest" generatetoaddress 101 'bcrt1pj5c2dlkspvkcj2nq7amv0r2sqxw4vtjtrxhlf3c6mqkyaa7452vsa9xjn2'
-
-
-        1) if ord and bitcoind are not in sync then
-
-            - Navigate to:
-
-                "C:\Users**{USERNAME}**\AppData\Roaming\ord" and delete the regtest folder
-
-            - Now go to the cmd and then run the following commands:
-
-                ord -r index run
+    .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest" generatetoaddress 101 'bcrt1pj5c2dlkspvkcj2nq7amv0r2sqxw4vtjtrxhlf3c6mqkyaa7452vsa9xjn2'
 
 
+    1) if ord and bitcoind are not in sync then
 
+        - Navigate to:
 
-    1) get balance of address
+            "C:\Users**{USERNAME}**\AppData\Roaming\ord" and delete the regtest folder
 
-        .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest" getbalance
+        - Now go to the cmd and then run the following commands:
 
-
-
-    1) index ord
-
-        ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" index update
+            ord -r index run
 
 
 
 
-    1) get balance ord
+1) get balance of address
 
-        ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet balance
+    .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest" getbalance
+
+
+
+1) index ord
+
+    ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" index update
+
+
+
+
+1) get balance ord
+
+    ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet balance
     
 
 
 
-    1) inscribe a text saved in a .txt file and in an envelope
+1) inscribe a text saved in a .txt file and in an envelope
 
-    ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\inscribed.txt"
+ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\inscribed.txt"
 
         
 
 
 
-    1) stop regtest
+1) stop regtest
     
-        .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest" stop
+    .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest" stop
     
 ---
 
