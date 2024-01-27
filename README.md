@@ -172,19 +172,40 @@
 
 ---REGTEST---
 
-    .\bitcoind -regtest -datadir="D:\BitcoinRegtest" -txindex -listen=0
+   1) start regtest
+   
+        .\bitcoind -regtest -datadir="D:\BitcoinRegtest\regtest" -txindex -listen=0
 
 
-    ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\testnet3\.cookie" server
+    1) get info 
+
+        .\bitcoin-cli --regtest -datadir="D:\BitcoinRegtest\regtest" getblockchaininfo
 
 
-    ord --regtest --data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\testnet3\.cookie" wallet create
+   1) create ord wallet on regtest
+
+        ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest\regtest" --cookie-file="D:\BitcoinRegtest\regtest\regtest\.cookie" wallet create
 
 
-    .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest" generatetoaddress 101 'xxxxx'
+
+    1) recieve ord wallet on regtest
+
+        ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest\regtest" --cookie-file="D:\BitcoinRegtest\regtest\regtest\.cookie" wallet receive
+    
+        e.g. "bcrt1p4txqn38gvae4daw2l9lcjw5tp95jd2eh0sjegvj59ykgf94slsush49r5g"
 
 
-    .\bitcoin-cli --regtest --datadir="D:\BitcoinRegtest" stop
+
+    1) generate to address (needs to be more than 101 for first rewards)
+
+        .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest\regtest" generatetoaddress 101 'bcrt1p4txqn38gvae4daw2l9lcjw5tp95jd2eh0sjegvj59ykgf94slsush49r5g'
+
+
+    
+
+    1) stop regtest
+    
+        .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest\regtest" stop
     
 ---
 
@@ -208,3 +229,7 @@ inscribed.txt:
 ![inscribe](./inscr.png)
 
 ![inscribed](./inscribed.png)
+
+
+To estimate fees: 
+divide the content size by four and multiply by the fee rate.
