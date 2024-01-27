@@ -205,7 +205,6 @@ inscribed.txt:
     OP_ENDIF
 
 
-![inscribe](./inscribe.png)
 
 
 ![inscribed](./inscribed.png)
