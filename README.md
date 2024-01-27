@@ -47,7 +47,7 @@ can check block against the [ordinals.com testnet](https://testnet.ordinals.com/
 
 6) create taproot wallet
 
-    .\bitcoin-cli --testnet --datadir="D:\BitcoinData" createwallet "taproot_wallet1" false false "" false true
+    .\bitcoin-cli --testnet --datadir="D:\BitcoinData" createwallet "ord" false false "" false true
 
 
 
