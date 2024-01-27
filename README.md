@@ -141,7 +141,7 @@
 
 17) inscribe a text saved in a .txt file and in an envelope
 
-    ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" wallet inscribe --fee-rate 1000 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\inscribed.txt"
+    ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\inscribed.txt"
 
 
 
@@ -177,9 +177,13 @@
         .\bitcoind -regtest -datadir="D:\BitcoinRegtest" -txindex -listen=0
 
 
+
+
     1) get info 
 
         .\bitcoin-cli --regtest -datadir="D:\BitcoinRegtest" getblockchaininfo
+
+
 
 
    1) create ord wallet on regtest
@@ -202,23 +206,26 @@
         .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest" generatetoaddress 101 'bcrt1pj5c2dlkspvkcj2nq7amv0r2sqxw4vtjtrxhlf3c6mqkyaa7452vsa9xjn2'
 
 
-    1) if ord and bitcoind are not in sync then
+        1) if ord and bitcoind are not in sync then
 
-        - Navigate to:
+            - Navigate to:
 
-            "C:\Users**{USERNAME}**\AppData\Roaming\ord" and delete the regtest folder
+                "C:\Users**{USERNAME}**\AppData\Roaming\ord" and delete the regtest folder
 
-        - Now go to the cmd and then run the following commands:
+            - Now go to the cmd and then run the following commands:
 
-            ord -r index run
+                ord -r index run
 
-    1) get balance to address
+
+
+
+    1) get balance of address
 
         .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest" getbalance
 
 
 
-    1) index
+    1) index ord
 
         ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" index update
 
@@ -228,8 +235,17 @@
     1) get balance ord
 
         ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet balance
+    
+
+
+
+    1) inscribe a text saved in a .txt file and in an envelope
+
+    ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\inscribed.txt"
 
         
+
+
 
     1) stop regtest
     
