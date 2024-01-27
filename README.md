@@ -271,7 +271,7 @@
 
 **Example Inscription for text**
 
-
+file: 
 inscribed.txt:
 
     OP_FALSE
@@ -289,5 +289,16 @@ inscribed.txt:
 ![inscribed](./inscribed.png)
 
 
+**Example Inscription for Text/ Image on RegTest**
+![reg](./regtestinscr.png)
+
+
+
+
+---
+
+---
+
 To estimate fees: 
-divide the content size by four and multiply by the fee rate.
+
+    divide the content size by four and multiply by the fee rate.
