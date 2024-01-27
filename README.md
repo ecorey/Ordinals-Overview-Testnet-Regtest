@@ -135,10 +135,10 @@ can check block against the [ordinals.com testnet](https://testnet.ordinals.com/
 
 1) get testnet bitcoin
 
-    [faucets](https://bitcoinfaucet.uo1.net/)-
+   USE THIS [SWAP](https://www.altquick.com/swap/)
 
 
-    [or here and use legacy segwit address in unisat wallet](https://coinfaucet.eu/en/btc-testnet/)
+    
 
 
 
@@ -149,9 +149,8 @@ can check block against the [ordinals.com testnet](https://testnet.ordinals.com/
 
 
 
-TO RUN ORD WALLET CLOSE THE ORD SERVER, IT NEEDS TO SELF INDEX
+**TO RUN ORD WALLET CLOSE THE ORD SERVER, IT NEEDS TO SELF INDEX**
 
-TO GET TESTNET BTC EASY AND IN LARGER AMOUNTS USE THIS [SWAP](https://www.altquick.com/swap/)
 
 ---
 
