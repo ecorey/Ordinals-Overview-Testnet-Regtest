@@ -208,4 +208,4 @@ inscribed.txt:
 ![inscribe](./inscribe.png)
 
 
-![inscribed](./inscribe.png)
+![inscribed](./inscribed.png)
