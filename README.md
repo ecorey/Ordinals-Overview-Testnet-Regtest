@@ -151,6 +151,7 @@ can check block against the [ordinals.com testnet](https://testnet.ordinals.com/
 
 TO RUN ORD WALLET CLOSE THE ORD SERVER, IT NEEDS TO SELF INDEX
 
+TO GET TESTNET BTC EASY AND IN LARGER AMOUNTS USE THIS [SWAP](https://www.altquick.com/swap/)
 
 ---
 
