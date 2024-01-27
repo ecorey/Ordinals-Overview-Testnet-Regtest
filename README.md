@@ -1,6 +1,6 @@
-JUst, AnOther project created out of painstakingly long attempts at =getting easy things wrong and sometimes tricky things right. In this repo are cli commands to interact with the bitcoind and ord libraries to create inscriptions on both the testnet and regnet. 
+ In this readme are cli commands to interact with the bitcoind and ord libraries to create inscriptions on both the testnet and regnet. 
 
-The scripts included are to demonstrate interacting with the bitcoin-cli interface via js. 
+In this repo are scripts included are to demonstrate interacting with the bitcoin-cli interface via js. 
 
 ---
 
