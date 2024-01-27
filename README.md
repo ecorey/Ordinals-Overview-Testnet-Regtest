@@ -190,3 +190,22 @@
 
 ---
 
+**Example Inscription for text**
+
+
+inscribed.txt:
+
+    OP_FALSE
+    OP_IF
+    OP_PUSH "ord"
+    OP_PUSH 1
+    OP_PUSH "text/plain;charset=utf-8"
+    OP_PUSH 0
+    OP_PUSH "crypto anunnaki strikes again"
+    OP_ENDIF
+
+
+![inscribe](./inscribe.png)
+
+
+![inscribed](./inscribe.png)
