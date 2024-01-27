@@ -57,7 +57,7 @@ can check block against the [ordinals.com testnet](https://testnet.ordinals.com/
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" -rpcwallet="taproot_wallet1" getnewaddress "" "bech32m"
 
-    e.g. tb1qt0n9j9re9cvw05ztjv60ka65ywxuj2h3r22t96
+    e.g. tb1pk0vfpp7jf6cv0j926gqr2d39uy292y9l5yc904p7vcq5jthktjrscz24vf
 
 
 
