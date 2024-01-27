@@ -21,13 +21,13 @@
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" getblockcount
 
 
-can check block against the [ordinals.com testnet](https://testnet.ordinals.com/blocks) 
+    can check block against the [ordinals.com testnet](https://testnet.ordinals.com/blocks) 
 
 
 
 
 
-4) OR open testnet gui  // need to close bitcoind first as it has a lock // cannot open ord like this
+4) to open testnet gui  // need to close bitcoind first as it has a lock // cannot open ord like this
 
     
     ./bitcoin-qt -testnet -datadir="D:\BitcoinData" -wallet=ord
