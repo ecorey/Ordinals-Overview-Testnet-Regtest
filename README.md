@@ -8,9 +8,9 @@
 
 
 
-2) check with .\bitcoin-cli that testnet is synced compare block numbet to [bitcoin testnet](https://mempool.space/testnet) 
+2) check with .\bitcoin-cli that testnet is synced compare block number to [bitcoin testnet](https://mempool.space/testnet) 
 
-    .\bitcoin-cli -testnet -datadir="D:\BitcoinData" getblockchaininfo
+    .\bitcoin-cli --testnet --datadir="D:\BitcoinData" getblockchaininfo
 
 
 
@@ -22,6 +22,8 @@
 
 
 can check block against the [ordinals.com testnet](https://testnet.ordinals.com/blocks) 
+
+
 
 
 
@@ -83,6 +85,8 @@ can check block against the [ordinals.com testnet](https://testnet.ordinals.com/
 
 
 
+
+
 10) create ord wallet recieve 
 
 
@@ -95,6 +99,13 @@ can check block against the [ordinals.com testnet](https://testnet.ordinals.com/
 1) load wallet named "ord"
 
     .\bitcoin-cli -testnet -datadir="D:\BitcoinData" loadwallet "ord"
+
+
+
+
+1) unload wallet named "ord"
+
+    .\bitcoin-cli -testnet -datadir="D:\BitcoinData" unloadwallet "ord"
 
 
 
@@ -116,6 +127,11 @@ can check block against the [ordinals.com testnet](https://testnet.ordinals.com/
 
 
 
+1) get balance ord
+
+    ord --testnet --bitcoin-data-dir="D:\BitcoinData" --cookie-file="D:\BitcoinData\testnet3\.cookie" wallet balance
+
+
 
 1) get testnet bitcoin
 
@@ -133,8 +149,7 @@ can check block against the [ordinals.com testnet](https://testnet.ordinals.com/
 
 
 
-ord --testnet --cookie-file="D:\BitcoinData\testnet3\.cookie" wallet inscribe --fee-rate 100000 --file radbro.txt
-
+TO RUN ORD WALLET CLOSE THE ORD SERVER, IT NEEDS TO SELF INDEX
 
 
 ---
