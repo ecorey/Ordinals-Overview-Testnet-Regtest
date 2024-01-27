@@ -240,7 +240,7 @@
 
 
 
-1) start the ord server with the testnet
+1) start the ord server with the regtest
 
     ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" server --http-port 8080 --address 127.0.0.1
 
