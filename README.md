@@ -174,38 +174,66 @@
 
    1) start regtest
    
-        .\bitcoind -regtest -datadir="D:\BitcoinRegtest\regtest" -txindex -listen=0
+        .\bitcoind -regtest -datadir="D:\BitcoinRegtest" -txindex -listen=0
 
 
     1) get info 
 
-        .\bitcoin-cli --regtest -datadir="D:\BitcoinRegtest\regtest" getblockchaininfo
+        .\bitcoin-cli --regtest -datadir="D:\BitcoinRegtest" getblockchaininfo
 
 
    1) create ord wallet on regtest
 
-        ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest\regtest" --cookie-file="D:\BitcoinRegtest\regtest\regtest\.cookie" wallet create
+        ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet create
+
 
 
 
     1) recieve ord wallet on regtest
 
-        ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest\regtest" --cookie-file="D:\BitcoinRegtest\regtest\regtest\.cookie" wallet receive
+        ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet receive
     
-        e.g. "bcrt1p4txqn38gvae4daw2l9lcjw5tp95jd2eh0sjegvj59ykgf94slsush49r5g"
+        e.g. "bcrt1pj5c2dlkspvkcj2nq7amv0r2sqxw4vtjtrxhlf3c6mqkyaa7452vsa9xjn2"
 
 
 
     1) generate to address (needs to be more than 101 for first rewards)
 
-        .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest\regtest" generatetoaddress 101 'bcrt1p4txqn38gvae4daw2l9lcjw5tp95jd2eh0sjegvj59ykgf94slsush49r5g'
+        .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest" generatetoaddress 101 'bcrt1pj5c2dlkspvkcj2nq7amv0r2sqxw4vtjtrxhlf3c6mqkyaa7452vsa9xjn2'
 
 
-    
+    1) if ord and bitcoind are not in sync then
+
+        - Navigate to:
+
+            "C:\Users**{USERNAME}**\AppData\Roaming\ord" and delete the regtest folder
+
+        - Now go to the cmd and then run the following commands:
+
+            ord -r index run
+
+    1) get balance to address
+
+        .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest" getbalance
+
+
+
+    1) index
+
+        ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" index update
+
+
+
+
+    1) get balance ord
+
+        ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet balance
+
+        
 
     1) stop regtest
     
-        .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest\regtest" stop
+        .\bitcoin-cli -regtest -datadir="D:\BitcoinRegtest" stop
     
 ---
 
