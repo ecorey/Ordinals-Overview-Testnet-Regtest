@@ -171,13 +171,13 @@ need to reindex runes by first deleting the original .redb file and runnig the i
 
     ord --index-runes  --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" index info
 
-102) etch // not correct yet
+102) etch 
 
     ord --index-runes  --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie"  wallet etch --divisibility 0 --fee-rate 1 --rune AAAAAAAAAAAAAAAAA --supply 100 --symbol z
 
 103)  get runes
 
-     ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" --index-runes runes
+    ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" --index-runes runes
 
 
 
