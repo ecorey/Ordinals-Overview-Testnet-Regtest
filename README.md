@@ -3,7 +3,7 @@
 In this repo are scripts included are to demonstrate interacting with the bitcoin-cli interface via js. 
 
 ---
-
+**TO RUN ORD WALLET CLOSE THE ORD SERVER, IT NEEDS TO SELF INDEX**
 ---
 
 ----- START TESTNET ------
@@ -152,14 +152,35 @@ In this repo are scripts included are to demonstrate interacting with the bitcoi
 
     .\bitcoin-cli --testnet --datadir="D:\BitcoinData" stop
 
+     ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" --index-runes="C:\\Users\\bengs\\AppData\\Roaming\\ord\\testnet3\\index.redb" runes
+
+---
+
+**runes**
+
+---
+
+need to reindex runes by first deleting the original .redb file and runnig the index run or the index update command
+
+100) index runes
+
+    ord --index-runes  --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie"  index update
+
+
+101) index info
+
+    ord --index-runes  --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" index info
+
+102) etch // not correct yet
+
+    ord --index-runes  --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie"  wallet etch --divisibility 0 --fee-rate 1 --rune AAAAAAAAAAAAAAAAA --supply 100 --symbol z
+
+103)  get runes
+
+     ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" --index-runes runes
 
 
 
-
-
-
-
-**TO RUN ORD WALLET CLOSE THE ORD SERVER, IT NEEDS TO SELF INDEX**
 
 
 ---
