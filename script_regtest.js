@@ -1,7 +1,7 @@
 const axios = require('axios');
 
-const rpcUser = '__cookie__';
-const rpcPassword = '';
+const rpcUser = 'REPLACE';
+const rpcPassword = 'REPLACE';
 const rpcURL = 'http://127.0.0.1:18443'; 
 async function getBlockchainInfo() {
     try {
