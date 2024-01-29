@@ -123,12 +123,12 @@ In this repo are scripts included are to demonstrate interacting with the bitcoi
 
 17) inscribe a text saved in a .txt 
 
-    ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\inscribed.txt"
+    ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\fortune_cookie.txt"
 
 
     inscribe an image
 
-    ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\radbro.jpg"
+    ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\example.png"
 
 
 
@@ -156,7 +156,7 @@ In this repo are scripts included are to demonstrate interacting with the bitcoi
 
 ---
 
-**runes**
+**RUNES**
 
 ---
 
@@ -167,17 +167,25 @@ need to reindex runes by first deleting the original .redb file and runnig the i
     ord --index-runes  --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie"  index update
 
 
+
+
 101) index info
 
     ord --index-runes  --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" index info
 
-102) etch 
+
+
+102) etch a rune
 
     ord --index-runes  --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie"  wallet etch --divisibility 0 --fee-rate 1 --rune AAAAAAAAAAAAAAAAA --supply 100 --symbol z
+
+
 
 103)  get runes
 
     ord --testnet --bitcoin-data-dir="D:\\BitcoinData" --cookie-file="D:\\BitcoinData\\testnet3\\.cookie" --index-runes runes
+
+
 
 
 
@@ -260,7 +268,7 @@ need to reindex runes by first deleting the original .redb file and runnig the i
 
 1) inscribe a text saved in a .txt 
 
-    ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\inscribed.txt"
+    ord --regtest --bitcoin-data-dir="D:\BitcoinRegtest" --cookie-file="D:\BitcoinRegtest\regtest\.cookie" wallet inscribe --fee-rate 10 --file "C:\\Users\\bengs\\Bitcoin_Projects\\ord\\fortune_cookie.txt"
 
 
 
